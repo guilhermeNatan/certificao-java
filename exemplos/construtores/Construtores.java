@@ -13,7 +13,7 @@ class Construtores {
 	
 	public void metodo ()
 	{
-		// não é possivel chamar construtor dentro de um método 
+		// nao e possivel chamar construtor dentro de um metodo 
 		//this(1, 1);
 	}
 	

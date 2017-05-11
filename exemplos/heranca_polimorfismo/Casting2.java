@@ -12,6 +12,10 @@ class Teste {
 		// Não compila
 		//Filho filho = new Pai(); 
 
+		/*
+		 *Compila mas da ClassCastingException , pois o tipo do objeto 
+		 referenciado(Pai) é diferente da variavel de referencia(Filho) 
+		 * */
 		Filho filho = (Filho)new Pai();
 	}
 }
