@@ -42,6 +42,9 @@ class TesteDatas{
 
 		System.out.println("-----------------------------------");
 		System.out.println(Period.between(LocalDate.now().minusDays(1000), LocalDate.now()));
+
+
+		System.out.println(Period.ofDays(20));
 	}
 }
 
