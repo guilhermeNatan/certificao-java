@@ -5,6 +5,11 @@ class Veiculo {
 		System.out.println("Liga Veiculos"); 
 	}
 
+	public void anda() throws IndexOutOfBoundsException
+	{
+		System.out.println("anda veiculo");
+	}
+
 }
 
 class Helicoptero extends Veiculo {
@@ -14,6 +19,13 @@ class Helicoptero extends Veiculo {
 	{
 		System.out.println("Liga helicoptero");
 	}
+
+	public void anda() throws StringIndexOutOfBoundsException 
+	{
+	          System.out.println("anda helicoptero");
+					          
+	}
+
 	
 }
 
@@ -29,6 +41,6 @@ class SobrecargaComException
 	public static void main(String ...args) throws java.io.IOException {
 	Veiculo v = new Helicoptero(); 
 	v.liga();
-	
+	v.anda();
 	}
 }

@@ -28,7 +28,8 @@ class TesteConstrutores2 {
 		System.out.println(x);
 	}
 
-	//Não compila pois não se pode chamar um método quando se invoca um construtor por meio do this
+	//Não compila pois não se pode chamar um método de INSTANCIA quando se invoca um construtor por meio do this
+	//Métodos estaticos podem ser invocados
 	public TesteConstrutores2(){
 	//	this(metodo());
 	}
@@ -79,6 +80,11 @@ class Z extends Y  {
 	{
 		super(num1); 
 	}
+
+	public Z()
+	{
+		super(1);
+	}
 	
 }
 
@@ -89,18 +95,18 @@ class TesteConstrutores3{
 	private boolean priv = true; 
 	 public  static   void  main(String ...args)
 	{
-		W w = new W();
+		W w = new W(); // metodo
 		TesteConstrutores3 t = new TesteConstrutores3(); 
-		System.out.println(t.priv);
+		System.out.println(t.priv); // true
 
-		System.out.println(outro);
+		System.out.println(outro);// true 
 
 		Boolean b = new Boolean(false); 
 		Boolean c = new Boolean (false); 
-		System.out.println(new Boolean(false) == false);
-		System.out.println(b==c);
-		System.out.println(b.equals(c));
-		System.out.println(b.equals(false));
+		System.out.println(new Boolean(false) == false); // true
+		System.out.println(b==c); // false pq esta comparando referencias  
+		System.out.println(b.equals(c)); //true 
+		System.out.println(b.equals(false)); //true
 	}
 
 	static boolean qualquer = false; 
